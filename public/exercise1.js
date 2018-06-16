@@ -5,8 +5,13 @@
 let reducer1 = (state = 0, action) => {
 	// Write code here that will:
 	// 1) check to see if the action is of type "INCREMENT" (see the dispatch call below)
+	if (action.type == "INCREMENT") {
 	// 2) return state + 1 if it's and "INCREMENT"
+		return state + 1;
 	// 3) otherwise just return state
+	} else {
+		return state;
+	}
 	// (HINT - look at the other exercises to see what might go here)
 	return state;
 }
